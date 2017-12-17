@@ -1,0 +1,62 @@
+---
+title       : The "Day You Were Born" App
+subtitle    : You know the date but do you know what day it was?
+author      : Yoav Pridor
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Wouldn't you like to know...
+
+* Your parents always tell you stories about the day you were born
+  - How cute you were
+  - How much you weighed
+  - How crazy your grandparents were
+  
+---
+
+# but they nevertell you what day of the week it was
+
+--- 
+
+## Introducing The "Day You Were Born" App
+
+Now you can know, with one click
+ - Just open the app at
+ 
+### https://ypridor.shinyapps.io/Day_you_were_born/
+
+![The app will open](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img1.jpg)
+
+
+---
+
+## Enter your date of birth in the side panel
+
+![Use date panel](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img2.jpg)
+
+
+### Click the "What day was it" button
+
+![Click](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img4.jpg)
+
+---
+
+## The app will calculate the day of the week
+
+```{r}
+myDate <- "1978-09-25"
+myDay <- weekdays(as.Date( myDate ))
+print("You were born on a :", myDay)
+```
+
+![Click](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img3.jpg)
+
+
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The &quot;Day You Were Born&quot; App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The &quot;Day You Were Born&quot; App">
+  <meta name="author" content="Yoav Pridor">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The &quot;Day You Were Born&quot; App</h1>
+    <h2>You know the date but do you know what day it was?</h2>
+    <p>Yoav Pridor<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Wouldn&#39;t you like to know...</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Your parents always tell you stories about the day you were born
+
+<ul>
+<li>How cute you were</li>
+<li>How much you weighed</li>
+<li>How crazy your grandparents were</li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h1>but they nevertell you what day of the week it was</h1>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Introducing The &quot;Day You Were Born&quot; App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Now you can know, with one click</p>
+
+<ul>
+<li>Just open the app at</li>
+</ul>
+
+<h3><a href="https://ypridor.shinyapps.io/Day_you_were_born/">https://ypridor.shinyapps.io/Day_you_were_born/</a></h3>
+
+<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img1.jpg" alt="The app will open"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Enter your date of birth in the side panel</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img2.jpg" alt="Use date panel"></p>
+
+<h3>Click the &quot;What day was it&quot; button</h3>
+
+<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img4.jpg" alt="Click"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The app will calculate the day of the week</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">myDate &lt;- &quot;1978-09-25&quot;
+myDay &lt;- weekdays(as.Date( myDate ))
+print(&quot;You were born on a :&quot;, myDay)
+</code></pre>
+
+<pre><code>## Warning in print.default(&quot;You were born on a :&quot;, myDay): NAs introduced by
+## coercion
+</code></pre>
+
+<pre><code>## Error in print.default(&quot;You were born on a :&quot;, myDay): invalid &#39;digits&#39; argument
+</code></pre>
+
+<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img3.jpg" alt="Click"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Wouldn&#39;t you like to know...'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Introducing The &quot;Day You Were Born&quot; App'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Enter your date of birth in the side panel'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The app will calculate the day of the week'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
