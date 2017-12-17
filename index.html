@@ -58,7 +58,7 @@
 
 <hr>
 
-<h1>but they nevertell you what day of the week it was</h1>
+<h1>but they never tell you what day of the week it was</h1>
 
   </article>
   <!-- Presenter Notes -->
@@ -77,8 +77,6 @@
 
 <h3><a href="https://ypridor.shinyapps.io/Day_you_were_born/">https://ypridor.shinyapps.io/Day_you_were_born/</a></h3>
 
-<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img1.jpg" alt="The app will open"></p>
-
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -88,11 +86,7 @@
     <h2>Enter your date of birth in the side panel</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img2.jpg" alt="Use date panel"></p>
-
-<h3>Click the &quot;What day was it&quot; button</h3>
-
-<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img4.jpg" alt="Click"></p>
+    <h3>Click the &quot;What day was it&quot; button</h3>
 
   </article>
   <!-- Presenter Notes -->
@@ -105,17 +99,11 @@
   <article data-timings="">
     <pre><code class="r">myDate &lt;- &quot;1978-09-25&quot;
 myDay &lt;- weekdays(as.Date( myDate ))
-print(&quot;You were born on a :&quot;, myDay)
+print(c(&quot;You were born on a :&quot;,myDay))
 </code></pre>
 
-<pre><code>## Warning in print.default(&quot;You were born on a :&quot;, myDay): NAs introduced by
-## coercion
+<pre><code>## [1] &quot;You were born on a :&quot; &quot;Monday&quot;
 </code></pre>
-
-<pre><code>## Error in print.default(&quot;You were born on a :&quot;, myDay): invalid &#39;digits&#39; argument
-</code></pre>
-
-<p><img src="C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img3.jpg" alt="Click"></p>
 
   </article>
   <!-- Presenter Notes -->

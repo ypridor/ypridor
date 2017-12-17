@@ -20,7 +20,7 @@ knit        : slidify::knit2slides
   
 ---
 
-# but they nevertell you what day of the week it was
+# but they never tell you what day of the week it was
 
 --- 
 
@@ -31,19 +31,15 @@ Now you can know, with one click
  
 ### https://ypridor.shinyapps.io/Day_you_were_born/
 
-![The app will open](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img1.jpg)
 
 
 ---
 
 ## Enter your date of birth in the side panel
 
-![Use date panel](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img2.jpg)
-
 
 ### Click the "What day was it" button
 
-![Click](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img4.jpg)
 
 ---
 
@@ -53,19 +49,13 @@ Now you can know, with one click
 ```r
 myDate <- "1978-09-25"
 myDay <- weekdays(as.Date( myDate ))
-print("You were born on a :", myDay)
+print(c("You were born on a :",myDay))
 ```
 
 ```
-## Warning in print.default("You were born on a :", myDay): NAs introduced by
-## coercion
+## [1] "You were born on a :" "Monday"
 ```
 
-```
-## Error in print.default("You were born on a :", myDay): invalid 'digits' argument
-```
-
-![Click](C://Users//yoav.BUZZILLA//Documents//ypridor//assets//img//img3.jpg)
 
 
 
